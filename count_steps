@@ -1,0 +1,42 @@
+// function to count the steps to get to 0
+
+function getStepCount(n){
+    let step = 0;
+
+    while(n > 0){
+        if(n % 2 === 0){
+            n /= 2;
+        }
+        else{
+          n--;   
+        }
+        step += 1;
+    }
+    return step;
+}
+const an = getStepCount(10);
+console.log(an);
+
+
+
+////////////////////////////////
+// in C++ //
+/* 
+class Solution {
+    public:
+        int numberOfSteps(int num) {
+            int steps=0;
+    
+            while( num > 0){
+                if(num % 2 == 0){
+                    num /= 2;
+                }
+                else{
+                  num--;
+                }
+                steps += 1;
+            }
+               return steps;
+        }
+     
+    };  */
