@@ -1,0 +1,24 @@
+// to move all all 0 in an arr to back
+
+function moveToZero(arr){
+    let j = 0;
+    let len = arr.length
+    for(let i =0; i<len; i++){
+        console.log(`The element at i before swapping: ${i} `,arr[i]);
+            console.log(`The element at j before swapping: ${j} `,arr[j]);
+        if(arr[i] !== 0){
+             console.log(j);
+            [arr[i],arr[j]] = [arr[j],arr[i]];
+            console.log(`The element at i: ${i} `,arr[i]);
+            console.log(`The element at j:${j} `,arr[j]);
+            j++;
+            console.log(j);
+        }
+       
+    }
+    return arr;
+}
+
+let arr=[0,8,2,1,3,4,5,6,6,7,7];
+let ans = moveToZero(arr);
+console.log(ans);

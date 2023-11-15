@@ -1,6 +1,5 @@
 // to check if a number is power of four
 // such that n = 4^x
-s
 
 var isPowerOfFour = function(n) {
      
@@ -17,3 +16,5 @@ var isPowerOfFour = function(n) {
 
 const ans = isPowerOfFour(6);
 console.log(ans);
+const ans2 = isPowerOfFour(16);
+console.log(ans2);
