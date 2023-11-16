@@ -1,0 +1,15 @@
+var twoSum = function(nums, target) {
+    let map = new Map();
+    for(let i = 0; i< nums.length; i++){
+        let compliment =  target - nums[i];
+        console.log(compliment);
+        if(map.has(compliment)){
+            return [i, map.get(compliment)];
+        }else{
+            map.set(nums[i],i);
+        }
+    }
+};
+
+const ans = twoSum([2,3,7,4,1,9,5,7], 10);
+console.log(ans);

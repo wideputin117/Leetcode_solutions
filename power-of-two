@@ -1,0 +1,22 @@
+// function two return n such that it is obtained by power of two
+
+var power= (n)=>{
+if(n<=0)
+return false;
+if(n === 1)
+return true;
+if(n %2 !== 0)
+return false;
+
+return power(n/2);
+}
+const ans = power(16);
+console.log(ans);
+
+// one more way of checking for power of 2
+
+var newSol=(x)=>{
+    let y = x;
+    
+
+}
