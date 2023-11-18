@@ -1,0 +1,18 @@
+// funtion to find a palindrome using two pointer methon
+
+var find_Palindrome = (x)=>{
+  x  = x.toString();
+  let left = 0;
+  let right = x.length - 1;
+// using the while loop to find the the palindrome
+// iterating till left is less than right
+while(left < right){
+    if(x[left] !== x[right]){
+    return false}
+    left++;
+    right--;
+}
+return true;
+}
+
+console.log(find_Palindrome("An"));
