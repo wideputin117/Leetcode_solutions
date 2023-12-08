@@ -1,3 +1,5 @@
+// this is also selection sort
+
 function maxElem(arr){
     for(let i = 0; i < arr.length - 1; i++){
         let maxIndex = i;
