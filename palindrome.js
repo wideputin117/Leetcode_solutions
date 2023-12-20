@@ -11,7 +11,7 @@ function checkPalindrom(string) {
         
         return false;
 }
- let ans = checkPalindrom("Manish");
+ let ans = checkPalindrom("MaMa");
  
  if(ans){
     console.log(ans);

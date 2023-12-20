@@ -18,7 +18,7 @@ function maxProfit(prices){
         console.log("CurrMax AFTER: " + currMax)
 
     }
-    return currMax;
+    return [currMax,currMin];
 }
 
 const ans = maxProfit([2,1,7,3,5,8,2,]);
