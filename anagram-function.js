@@ -14,4 +14,4 @@ function anagram(val1, val2){
    }
 }
 
-console.log(anagram("manish","mansh"))
+console.log(anagram("manish","mahnis"))
