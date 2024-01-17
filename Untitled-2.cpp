@@ -1,27 +1,21 @@
-// to find the sorted arr
+// guess the no
 #include<iostream>
- using namespace std;
+using namespace std;
 
-int maxElem(int arr[], int n){
-    int max = arr[0];
-    for(int i = 1; i < n; i++){
-       
-        if(max< arr[i]){
-            max = arr[i];
-        }
-        
+int main(void){
+
+    int pick, guess;
+    cin >> pick ;
+    cin >> guess;
+   if(pick < guess){
+    cout << "-1";
+    return -1;
+   } else if(pick > guess){
+    cout << "1";
+    return 1;
    }
-   return max;
-}
- int main(void){
-    int n;
-    cin >> n;
-    int arr[n];
-   for(int i = 0; i<n; i++){
-        cin >> arr[i];
-    }
-
-    int ans =  maxElem(arr,n);
-   cout <<"the max element is " << ans << endl;
+   else{
+    cout << "0";
     return 0;
- }
+   }
+}

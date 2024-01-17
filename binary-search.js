@@ -19,7 +19,7 @@ function BinarySearch(arr,target){
 
         // checking for target
         if(newarr[mid] === target)
-        return newarr[mid];
+        return [newarr[mid],mid];
         
         // condition when target is more than at mid in that case we will move left pointer from 0 to mid+1 right will remain as same
         if(newarr[mid]< target)
@@ -35,5 +35,20 @@ function BinarySearch(arr,target){
 
 }
 
-let answer = BinarySearch([1,2,3,4,1,2,9,2,55,33,11,6,3,445,6,23,1,55,784,31,45,,46,57,88,54,221,13,34,56,7889,34,12,22], 17)
+let answer = BinarySearch([1,2,3,4,1,2,9,2,55,33,11,6,3,445,6,23,1,55,784,31,45,,46,57,88,54,221,13,34,56,7889,34,12,22], 11)
 console.log(answer);
+
+
+// without search
+function squareRoot(num){
+  let sqrt = num /2;
+  console.log(sqrt)
+  let temp = 0;
+
+  while(sqrt != temp){ // will run till sqrt is not equal to the temp
+      temp= sqrt;
+      sqrt = (num/temp+temp)/2;
+  }
+  return sqrt;
+}
+console.log(squareRoot(2))
