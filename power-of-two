@@ -7,7 +7,7 @@ if(n === 1)
 return true;
 if(n %2 !== 0)
 return false;
-
+console.log(n);
 return power(n/2);
 }
 const ans = power(16);
@@ -15,8 +15,8 @@ console.log(ans);
 
 // one more way of checking for power of 2
 
-var newSol=(x)=>{
-    let y = x;
+// var newSol=(x)=>{
+//     let y = x;
     
 
-}
+// }

@@ -1,17 +1,21 @@
 function anagram(val1, val2){
-    let newval = val1.split('');
+    let newval1 = val1.split('');
+   
+    
     let newval2 = val2.split('');
-    newval = newval.sort((a,b)=>a-b);
-    newval2 = newval2.sort((a,b)=>a-b);
-    if(newval.length != newval2.length){
+    let newval3 = newval1.sort((a,b)=>a-b);
+    let newval4 = newval2.sort((a,b)=>a-b);
+    if(newval3.length != newval4.length){
         return false;
     }
-   for(let i = 0; i< newval.length; i++){
-        if(newval[i] != newval2[i]){
+    else{
+   for(let i = 0; i< newval4.length; i++){
+        if(newval3[i] !== newval4[i]){
             return false;
         }
         return true;
    }
 }
+}
 
-console.log(anagram("manish","mahnis"))
+console.log(anagram("manish","mahna1"))

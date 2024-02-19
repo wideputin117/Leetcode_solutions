@@ -16,5 +16,6 @@ var fizzBuzz = function(n) {
 };
 
 const ans=fizzBuzz(15);
+ans.flat(1);
 console.log(ans);
  

@@ -1,6 +1,6 @@
 function wealth(arr){
     var maxwealth = 0;
-arr.forEach(element => {
+      arr.forEach(element => {
         let currentWealth = 0;
         element.forEach(bank => {
             currentWealth += bank; 
