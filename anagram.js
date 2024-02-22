@@ -12,6 +12,7 @@ const anagram=(str1,str2)=>{
 
    const sortedarr1 = str1.split('').sort().join('');
    const sortedarr2 = str2.split('').sort().join('');
+   console.log(sortedarr1,sortedarr2);
 
    return sortedarr1 === sortedarr2;
      
