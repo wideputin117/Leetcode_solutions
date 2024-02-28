@@ -1,7 +1,7 @@
 // find square root of an number using newton raphsons method
 
 function newtonSquare(){ // x = is approximate value and n = is the number
-   let x, n =25;
+   let x, n =69;
     x = n;
     
     for(let i =0; i < 10; i++){

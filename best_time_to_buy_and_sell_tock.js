@@ -18,8 +18,9 @@ function maxProfit(prices){
         console.log("CurrMax AFTER: " + currMax)
 
     }
+    console.log("Index of element",prices.indexOf(currMax));
     return [currMax,currMin];
 }
 
 const ans = maxProfit([2,1,7,3,5,8,2,]);
-console.log(ans);
+console.table(ans);

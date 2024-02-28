@@ -40,15 +40,15 @@ console.log(answer);
 
 
 // without search
-function squareRoot(num){
-  let sqrt = num /2;
-  console.log(sqrt)
-  let temp = 0;
+// function squareRoot(num){
+//   let sqrt = num /2;
+//   console.log(sqrt)
+//   let temp = 0;
 
-  while(sqrt != temp){ // will run till sqrt is not equal to the temp
-      temp= sqrt;
-      sqrt = (num/temp+temp)/2;
-  }
-  return sqrt;
-}
-console.log(squareRoot(2))
+//   while(sqrt != temp){ // will run till sqrt is not equal to the temp
+//       temp= sqrt;
+//       sqrt = (num/temp+temp)/2;
+//   }
+//   return sqrt;
+// }
+//console.log(squareRoot(2))
