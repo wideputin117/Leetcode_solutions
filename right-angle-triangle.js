@@ -15,4 +15,4 @@ var pattern = (n)=>{
 
 }
 
-pattern(5)
+pattern(85)

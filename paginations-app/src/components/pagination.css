@@ -1,0 +1,67 @@
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Styles for the pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pagination button {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #ccc;
+  }
+  
+  .pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Fix the height of the rows */
+  tr {
+    height: 50px;
+  }
+  
+  /* Fix the width of the data */
+  td:first-child {
+    min-width: 50px;
+  }
+  
+  /* Add padding to the right of the body cells */
+  td:nth-child(3) {
+    padding-right: 8px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 0.8rem;
+    }
+  
+    .pagination {
+      font-size: 0.8rem;
+    }
+  }

@@ -1,8 +1,5 @@
 function anagram(val1, val2) {
-    if (val1 === val2) {
-      return true;
-    }
-  
+    
     let newval1 = val1.split('');
     let newval2 = val2.split('');
   

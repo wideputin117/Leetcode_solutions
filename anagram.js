@@ -1,6 +1,6 @@
 // funtion to check if an two strings are anagram or not
 
-const anagram=(str1,str2)=>{
+var anagram=(str1,str2)=>{
     // check if both strings length is equal
    let l1= str1.length;
    let l2= str2.length;
@@ -18,4 +18,4 @@ const anagram=(str1,str2)=>{
      
 }
 
-console.log(anagram("manish","manseh"))
+console.log(anagram("manish","masnih"))

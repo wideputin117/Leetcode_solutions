@@ -2,7 +2,7 @@
 // program to find the sum of the element by adding the previous result element to new element
 
 function sumArr(arr){
-    let result = [...arr];
+    let result = [];
 
     result[0] = arr[0]; // this initializes the result array with the first element of original arr becuse there os no previous element before the first element
     for(let i = 1; i < arr.length; i++){
