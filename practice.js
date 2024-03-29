@@ -14,3 +14,4 @@ function selectionSort(arr) {
     }
     return arr;
 }
+console.log(selectionSort([7,4,6,1]))

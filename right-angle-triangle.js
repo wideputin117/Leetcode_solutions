@@ -3,7 +3,7 @@
 
 var pattern = (n)=>{
 
-    for(let row=0;  row< n; row++){
+    for(let row = 0;  row < n; row++){
         let output = "";
        for(let col = 0 ;col <= row; col++){
        
@@ -15,4 +15,4 @@ var pattern = (n)=>{
 
 }
 
-pattern(85)
+pattern(5)

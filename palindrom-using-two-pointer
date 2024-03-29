@@ -15,4 +15,4 @@ while(left < right){
 return true;
 }
 
-console.log(find_Palindrome("AnA"));
+console.log(find_Palindrome("AnAn"));

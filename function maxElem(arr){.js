@@ -16,3 +16,17 @@ function maxElem(arr){
 }
 
 console.log(maxElem([2,3,4,5,6,7,1,9,3]));
+
+function max(arr2){
+    let len = arr2.length;
+    let max = arr2[0];
+    for( let i = 1 ; i < len; i++){
+        if(max < arr2[i]){
+            max = arr2[i];
+        }
+    }
+    return max;
+}
+
+console.log(max([2,1,3,5,2]));
+

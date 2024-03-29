@@ -9,7 +9,7 @@ function power(num, pow){
 }
 
 const ans =  power(9,4);
-//console.log(ans)
+ console.log(ans)
 
 
 // function to find suqare root of an number

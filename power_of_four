@@ -8,7 +8,7 @@ var isPowerOfFour = function(n) {
     }
     if(n <= 0)
     return false;
-    if(n %4 !==0)
+    if(n %4 !== 0)
     return false;
      
     return isPowerOfFour(n/4); //will call function recursively
@@ -19,5 +19,3 @@ console.log(ans);
 const ans2 = isPowerOfFour(16);
 console.log(ans2);
 
-
-console.log(4%4)

@@ -4,7 +4,7 @@ function findElement(arr,element) {
     let target = element;
     for(let i = 0; i < arr.length; i++) {
         if(target === arr[i]){
-            return arr[i];
+            return [arr[i],i];
         }
 
     }
