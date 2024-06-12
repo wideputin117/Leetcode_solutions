@@ -17,4 +17,4 @@ var palindrome = (str)=>{
    
 }
 
-console.log(palindrome("mracecarm"))
+console.log(palindrome("mracecar"))

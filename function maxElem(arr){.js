@@ -8,9 +8,10 @@ function maxElem(arr){
                 maxIndex = j;
             }
         }
-        let temp = arr[i];
+       /* let temp = arr[i];
         arr[i] = arr[maxIndex];
-        arr[maxIndex] = temp;
+        arr[maxIndex] = temp; */
+        [arr[i],arr[maxIndex]] =  [arr[maxIndex], arr[i]]
     }
     return arr[0];
 }
@@ -30,3 +31,22 @@ function max(arr2){
 
 console.log(max([2,1,3,5,2]));
 
+
+// sorting arr
+
+function sortArr(arr){
+    let len =  arr.length-1;
+
+    for(let i = 0; i <= len; i++){
+        for(let j = 0 ; j < len; j++){
+            if(arr[i]<arr[j]){
+                [arr[i],arr[j]] = [arr[j],arr[i]]
+            }
+        }
+    }
+    return arr;
+}
+
+console.log(sortArr([2,3,1,8,6,4,2,1]))
+
+ 

@@ -20,3 +20,5 @@ function anagram(val1, val2) {
   }
   
   console.log(anagram("manish", "mahins"));    // should return true
+
+  console.log(anagram("manish", "mins"));    // should return true

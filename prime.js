@@ -47,7 +47,7 @@ function sameValues(arr1,arr2){
   sameValue = new Set(sameValue);
   return sameValue;
 }
-console.log(sameValues([1,4,3,2,7,4,1,9],[9,3,2,4,,7,1,5]))
+console.log(sameValues([1,4,3,2,7,4,9],[9,3,2,4,7,5]))
 
  //////////////////////////////////////////////////////////////////////////
  //prime/
@@ -78,6 +78,6 @@ console.log(sameValues([1,4,3,2,7,4,1,9],[9,3,2,4,,7,1,5]))
   return primeNumbers;
 }
 
-const numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+const numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 28];
 const primes = checkPrimesInArray(numbers);
 console.log(primes); // Output: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]

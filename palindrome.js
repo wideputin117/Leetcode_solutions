@@ -2,8 +2,9 @@
 
 function checkPalindrom(string) {
     let newString = string.length;
+    console.log(newString);
     for(let i = 0; i < newString/2; i++) {
-        if(string[i] === string[newString-1-i]){
+        if(string[i] === string[newString-1]){
             return true
         }
          
@@ -11,7 +12,7 @@ function checkPalindrom(string) {
         
         return false;
 }
- let ans = checkPalindrom("MaM");
+ let ans = checkPalindrom("MaMm");
  
  if(ans){
     console.log(ans);
