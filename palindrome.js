@@ -6,7 +6,7 @@ function checkPalindrom(string) {
     for(let i = 0; i < newString/2; i++) {
         if(string[i] === string[newString-1]){
             return true
-        }
+            }
          
         }
         

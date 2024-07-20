@@ -69,3 +69,25 @@
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const primeFlags = checkPrimeNumbers(numbers);
 // console.log(primeFlags)
+
+
+// function to find twosum using two pointer
+
+function twoPointer(arr2,target){
+let left =0;
+let right = arr2.length-1;
+let sum =0;
+while(left < right){
+    sum = arr2[left]+arr2[right];
+    if(sum===target){
+        return [arr2[left],arr2[right]];
+    }else if(sum<target){
+        left++;
+    }else{
+        right--;
+    }
+}
+return 'element not present';
+}
+
+console.log(twoPointer([2,3,1,4,5,6],5))

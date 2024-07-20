@@ -13,3 +13,110 @@ var twoSum = function(nums, target) {
 
 const ans = twoSum([2,3,7,4,1,9,5,7], 10);
 console.log(ans);
+
+
+
+// function to reverse a array
+
+  // function reverseArr(arr){
+  //   let len = arr.length;
+  //   let temp;
+  //   for (let i =0; i < len/2;i++){
+  //     temp = arr[i];
+  //     arr[i]= arr[len-i-1];
+  //     arr[len-i-1]= temp;
+  //   }
+  //   return arr;
+  // }
+
+// console.log(reverseArr([1,2,3,4,5,6,7,8,9]));
+
+// function to check for palindrome
+
+function palindromeArr(arr2){
+    let len = arr2.length;
+ 
+    for (let i =0; i < len/2;i++){
+      if(arr2[i] !== arr2[len-i-1]){
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(palindromeArr("amama"))
+
+  // finding same element in an array
+
+  function sameElement(arr3){
+    let map = new Map();
+    let len = arr3.length;
+    let same=[];
+    for(let i=0;i<len;i++){
+        if(map.has(arr3[i])){
+             same.push(arr3[i]);
+        }else{
+            map.set(arr3[i],i)
+        }
+    }
+return same;
+  }
+
+  console.log(sameElement([1,2,3,4,5,4,6,1]))
+
+  // javascript program to find uniques values in an array
+
+  function uniqueValues(arr){
+    let len = arr.length;
+    let uniques={};
+    for(let i=0;i<len;i++){
+      if(uniques[arr[i]]){
+        uniques[arr[i]]++;
+      }else{
+        uniques[arr[i]]=1;
+      }
+    }
+    let single = Object.keys(uniques).filter((element)=> uniques[element]=== 1);
+    return single
+
+  }
+  console.log(uniqueValues([2,3,1,3,2,6,4,1]));
+
+
+
+  // function to return only unique values
+
+  console.log(isNaN(''))
+
+  // twosum
+
+  function twoSum2(arr4,target1){
+    let len = arr4.length;
+    let map= new Map();
+
+    for(let i=0;i < len;i++){
+      let compliment = target1- arr4[i];
+      if(map.has(compliment)){
+        return [i,map.get(compliment)];
+      }else{
+        map.set(i,arr4[i])
+      }
+    }
+
+  }
+  console.log(twoSum2([2,1,4,6,43,2,5],7))
+
+  // promises
+  function myDisplayName(name){
+    console.log(name);
+  }
+
+  let promise= new Promise(function(resolve,reject){
+    let x =6;
+    if(x===0){
+      resolve("The value is 0");
+     }{
+      reject("The value is not 0");
+    } 
+  })
+
+  promise.then(function(value){myDisplayName(value)},function(error){myDisplayName(error)})

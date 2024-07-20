@@ -169,3 +169,14 @@ const BinarySearch= (arr5,target)=>{
 }
  let answer = BinarySearch([2,3,1,4,6,8,4],8)
  console.log(answer);
+
+
+
+ // reversing an string 
+
+ function reverseString2(string){
+    let len = string.length;
+    let spl= string.split('');
+    console.log(spl);
+ }
+ reverseString2("Manisih sain");
