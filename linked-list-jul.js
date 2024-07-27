@@ -20,4 +20,46 @@
     }
  }
 
- // function code
+ // class to hold the functionality and other operations
+ 
+ class LinkedList{
+    constructor(){
+        // this class will keep a look at head and size of list;
+        this.head= null;
+        this.size = 0;
+    }
+    // function to add a newNode to the list
+    add(data){
+      let newNode = new Node(data);
+      // first case
+      if(this.head === null){
+        this.head = newNode;
+      }else{
+        let currentNode = this.head;
+        while(currentNode.next){ // while the next is pointing to some element in the list we will update currentNode to currentNode.next
+            currentNode = currentNode.next;
+        }
+        currentNode.next = newNode;
+      }
+      this.size++;
+    }
+    /**  function to get a Node at index */
+    getData(index){
+        if(index < 0 || index> this.size-1){
+            return undefined;
+        }else{
+            let currentNode = this.head;
+            for(let i=0;i < index; i++){
+                currentNode = currentNode.next;
+            }
+            return currentNode;
+        }
+    }
+    /**
+     * 
+     */
+
+ }
+
+ let newAddition  = new LinkedList();
+ newAddition.add(2);
