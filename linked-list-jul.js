@@ -61,5 +61,4 @@
 
  }
 
- let newAddition  = new LinkedList();
- newAddition.add(2);
+  
