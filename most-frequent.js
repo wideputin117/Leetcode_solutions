@@ -4,7 +4,7 @@ let nums = [2,1,4,5,2,4,6,6,2,4,8,5,3,6,8,1,6,9,0,3,1];
 let frequent = (nums)=>{
     // will use object method to keep track of keys and value;
     let obj = {};
-    let max = 0, el;
+    let max = 0, el;// el will hold the most frequent element in the end
     for(let i=0; i < nums.length;i++){
         if(!obj[nums[i]]){ 
         obj[nums[i]]=1;}
