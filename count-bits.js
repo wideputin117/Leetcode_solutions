@@ -1,8 +1,5 @@
 // Counting bits in a program
-
-let decimal = 124;
-let binary = decimal.toString(2);
-console.log(binary)
+ 
 
 let bitCount=(n)=>{
     let binary;
@@ -10,13 +7,15 @@ let bitCount=(n)=>{
     if(n<0){
      binary = (n >>> 0).toString(2);
     }else{
-     binary = n.toString(2)
+     binary = n.toString(2);
+    //  binary= binary.split("");
+    //  console.log(binary)
    }
    for(let i =0; i < binary.length; i++){
-    if(binary[i]=="1"){
+    if(binary[i]==="1"){
         count += 1;
     }
    }
    return count;
 }
-console.log(bitCount(128))
+console.log(bitCount(900))

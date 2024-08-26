@@ -22,7 +22,10 @@ for(let char of sortedS){
   charS[char] = (charS[char] || 0)+1; // check for frequency if the char is already in the map and add 1 to it
 }
 for(let char of sortedT){
+    
     charT[char]= (charT[char] || 0)+1;
+    console.log(charT[char])
+
 }
 for(let char in charS){
     if(charS[char]!==charT[char]){

@@ -1,1 +1,2 @@
-console.log(anagram("manish","mansih"))
+ binary= binary.split("");
+    //  console.log(binary)
