@@ -33,5 +33,6 @@ function plaindrome(str){
      
 }
 console.log(plaindrome('mamn'));
+console.log(plaindrome('mam'));
 
 // 

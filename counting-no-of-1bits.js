@@ -11,7 +11,7 @@ Explanation:
 var countBits = function(n) {
     let count=0;
     let bitCountArr=[];
-for(let i=0;i<=n;i++){
+    for(let i=0;i<=n;i++){
     let bitConversion= i.toString(2);
     bitConversion= bitConversion.split("");
     for(let j=0;j<bitConversion.length;j++){
