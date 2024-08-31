@@ -21,7 +21,7 @@ You have 3 cookies and their sizes are big enough to gratify all of the children
 You need to output 2.
  */
 
-var findContentChildren = function(g, s) {
+var findContentChildren = function(g, s) { // g is the greed of kids each no is the greed level and each element represent a kid
    // approach to sort the array
    // use two pointer one for cookies and one for greedArr
    g= g.sort((a,b)=>a-b);
@@ -29,7 +29,7 @@ var findContentChildren = function(g, s) {
 
    let cookieIndex=0;
    let greedIndex=0;
-
+ 
    while(cookieIndex < s.length && greedIndex < g.length){
     if(s[cookieIndex]>= g[greedIndex]){
         greedIndex++
