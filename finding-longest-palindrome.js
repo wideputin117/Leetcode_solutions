@@ -21,12 +21,12 @@ for (let char of s){
 
 let oddfound= false;
 for (let char in charFreq){
-console.log(charFreq[char]);
+// console.log(charFreq[char]);
  if(charFreq[char] %2 === 0){
     count += charFreq[char];
  }else{
- count += charFreq[char]-1
- oddfound = true}
+ count += charFreq[char]-1;
+ oddfound = true ;}
 }
  if(oddfound){
     count++
