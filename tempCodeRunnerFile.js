@@ -1,2 +1,1 @@
- binary= binary.split("");
-    //  console.log(binary)
+[4,3,1,6]))
