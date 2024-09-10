@@ -27,4 +27,4 @@ var findMaxConsecutiveOnes = function(nums) {
   return maxCount
 };
 
-console.log(findMaxConsecutiveOnes([1,0,1,1,0,1]))
+console.log(findMaxConsecutiveOnes([1,0,1,1,1,0,1]))

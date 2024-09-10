@@ -4,6 +4,7 @@
  */
 var reverseBits = function(n) {
     let binaryStr =  n.toString(2).padStart(32,'0');
+    console.log(binaryStr)
     let revbinaryStr = binaryStr.split("").reverse().join("");
     return parseInt(revbinaryStr,2);
 

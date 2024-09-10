@@ -20,4 +20,4 @@ var addStrings = function(num1, num2) {
   
 };
 
-console.log(typeof addStrings('134','1'))
+console.log(addStrings('134','1'))

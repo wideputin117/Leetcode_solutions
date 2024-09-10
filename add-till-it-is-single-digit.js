@@ -31,4 +31,4 @@ const singleSum2=(no)=>{
         return no%9;
     }
 }
-console.log(singleSum2(12))
+console.log(singleSum2(112))

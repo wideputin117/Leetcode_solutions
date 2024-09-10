@@ -8,7 +8,7 @@ let checkPrime=(num)=>{
         }
     }
     if(flag){
-        return "No is Prime"
+        return num
     }else{
         return "It is not Prime"
     }
