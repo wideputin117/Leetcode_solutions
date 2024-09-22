@@ -13,9 +13,9 @@ let missingNum=  (arr)=>{
     // will use for of loop
     for(let char of arr){
         console.log(char)
-        // addNum.delete(char)
+        addNum.delete(char)
     }
     console.log(Array.from(addNum))
 }
 
-missingNum([1, 2, 4, 6, 3])
+missingNum([1, 2, 4, 6, 3,8])

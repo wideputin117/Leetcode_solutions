@@ -15,5 +15,5 @@ var twoSum= (arr, target)=>{
 
 }
 
-const ans = twoSum([1, 2, 3,3,4,5,6,7],10);
+const ans = twoSum([1,2,3,3,4,5,6,7],10);
 console.log(ans);
