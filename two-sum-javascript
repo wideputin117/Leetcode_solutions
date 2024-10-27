@@ -61,7 +61,7 @@ function palindromeArr(arr2){
 return same;
   }
 
-  console.log(sameElement([1,2,3,4,5,4,6,1]))
+  console.log(sameElement([1,2,3,4,5,4,6,1]));
 
   // javascript program to find uniques values in an array
 
