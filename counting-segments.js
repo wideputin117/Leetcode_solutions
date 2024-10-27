@@ -10,4 +10,4 @@ var countSegments = function(s) {
     return len;
 };
 
-console.log(countSegments("   "))
+console.log(countSegments("mlsx mlsx "))

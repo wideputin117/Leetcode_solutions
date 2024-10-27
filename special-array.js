@@ -40,4 +40,4 @@ var isArraySpecial = function(nums) {
     return true;
 };
 
-console.log(isArraySpecial([4,3,1,6]))
+console.log(isArraySpecial([4,3,6]))

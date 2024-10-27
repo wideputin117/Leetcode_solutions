@@ -13,4 +13,4 @@ let single=(arr)=>{
 
 }
 
-console.log(single([4,1,2,1,4,3,3,2]))
+console.log(single([4,1,2,1,4,3,3,7,7,9,2]))

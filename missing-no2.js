@@ -12,7 +12,7 @@ let missingNum=  (arr)=>{
 
     // will use for of loop
     for(let char of arr){
-        console.log(char)
+        // console.log(char)
         addNum.delete(char)
     }
     console.log(Array.from(addNum))

@@ -17,7 +17,7 @@ Output: 0
 // this question is asking for digital root of a num
 // digital root is the sum of thr given num say 120 so sum is 1+2+3=6 // have to keep adding till we get single digit
 const singleSum=(num)=>{
-    return num===0?0: (num%9===0?0:num%9); // this is the easiest method digital root of a can be taken by the division of 9 to the digit
+    return num === 0 ? 0 : (num%9===0?0:num%9); // this is the easiest method digital root of a can be taken by the division of 9 to the digit
 }
 console.log(singleSum(12));
 
