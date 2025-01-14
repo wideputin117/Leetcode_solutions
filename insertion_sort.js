@@ -12,7 +12,7 @@ const insertionSort =(arr)=>{
 
 // console.log(insertionSort([2,3,5,1,9,4,2]))
 
-
+//my  approcah using two while loop
 const insertionSort2 = (arr2)=>{
     let i =1
     while(i<arr2.length){
