@@ -27,4 +27,4 @@ while(arr2.length){
 return result.reverse()
 }
 
-console.log(deepFlat([[1,3],[[2,3],1],2]))
+console.log(deepFlat([[1,3],[[2,3],[1]],2]))
