@@ -63,7 +63,7 @@ Area=1×1=1
 If we incorrectly chose the taller height, the formula would wrongly assume water can be contained up to 2, which is not possible since the shorter height limits the boundary.
 
 Key Insight:
-If we select the taller height, it assumes that water can fill up to that level, which is incorrect because the shorter height restricts the water level. Therefore, we always consider the minimum height, ensuring the water is fully contained.
+If we select the taller height, it assumes that water can fill up to that level, which is incorrect because the shorter height restricts the water level. Therefore, we always consider the minimum height, ensuring the water is fully contained. 
  */
 var maxArea = function(height) {
  
