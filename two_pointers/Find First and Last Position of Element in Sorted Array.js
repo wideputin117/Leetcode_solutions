@@ -1,8 +1,9 @@
-var searchRange = function(arr, target) {
-    for(let i=0;i< arr.length;i++){
-      if(arr[i]== target){
-        for(let j= arr.length-1;j>=0;--j){
-          if(arr[j]==target){
+/** brute force */
+var searchRange = function(nums, target) {
+    for(let i=0;i< nums.length;i++){
+      if(nums[i]== target){
+        for(let j= nums.length-1;j>=0;--j){
+          if(nums[j]==target){
             return [i,j]
           }
         }
@@ -12,4 +13,11 @@ var searchRange = function(arr, target) {
      return [-1,-1]
 };
 
-console.log(searchRange(arr = [5,7,7,8,8,10], target = 8))
+console.log(searchRange(nums = [5,7,7,8,8,10], target = 8))
+
+
+
+const varSearch2 = function(nums2,target2){
+    let left =0;
+    
+}

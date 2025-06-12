@@ -26,7 +26,8 @@ for (let char in charFreq){
     count += charFreq[char];
  }else{
  count += charFreq[char]-1;
- oddfound = true ;}
+ oddfound = true ;
+}
 }
  if(oddfound){
     count++
