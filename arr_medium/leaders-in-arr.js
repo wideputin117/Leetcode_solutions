@@ -1,4 +1,8 @@
-    function leaders(nums) {
+/** Leaders in an array TUF array medium question */
+
+
+
+function leaders(nums) {
      let n = nums.length-1
      let currentHighest = nums[n]
      
