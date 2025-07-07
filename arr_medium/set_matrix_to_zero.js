@@ -1,27 +1,34 @@
- function setZeroes(matrix) {
-       let m = matrix.length;
+/**
+ * @param {number[][]} matrix
+ * @return {void} Do not return anything, modify matrix in-place instead.
+ */
+var setZeroes = function(matrix) {
+     let m = matrix.length;
        let n = matrix[0].length;
-       
+       let flag = false
        console.log('the m and n are', m,n)
        for(let i=0;i<m;i++){
          for(let j=0;j<n;j++){
-           if(matrix[i][j]==0){
+           if(matrix[i][j]===0){
              markRow(i)
              markCol(j)
+             flag=true
            }
          }
        }
-       
-       function markRow(i){
-         for(let j=0; j<m;j++){
-           if(matrix[i][j]!=0){
-             matrix[i][j]=-1
+       if(!flag){
+        return matrix
+       }       
+       function markRow(arg){
+         for(let j=0; j<n;j++){
+           if(matrix[arg][j] != 0){
+             matrix[arg][j]=-1
            }
          }
        }
       function markCol(j){
-         for(let i=0; i<n;i++){
-           if(matrix[i][j]!=0){
+         for(let i=0; i<m;i++){
+           if(matrix[i][j] != 0){
              matrix[i][j]=-1
            }
          }
@@ -36,7 +43,4 @@
         }
        }
        return matrix
-       
-     }
-     
-     console.log(setZeroes([[1,1,1],[1,0,1],[1,1,1]]))
+};
