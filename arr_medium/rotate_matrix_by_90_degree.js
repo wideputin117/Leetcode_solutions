@@ -13,3 +13,5 @@ var rotate = function(matrix) {
      }
       return matrix
 };
+
+console.log(rotate[[1,3,2],[2,4,1],[2,1,4]])
