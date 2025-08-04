@@ -1,13 +1,23 @@
-/** best time to buy and sell stock II   have to find the maximam profit */
+    function majorityElementTwo(nums) {
+      let majorityElement = []
+      let hashMap= new Map()
 
-var maxProfit = function(prices) {
-    let maxSum =0
-    for(let i =1;i< prices.length;i++){
-        if(prices[i]>prices[i-1]){
-            maxSum += prices[i]-prices[i-1]
+      for(let i=0;i<nums.length; i++){
+        if(hashMap.get(nums[i])){
+            hashMap.set(nums[i], hashMap.get(nums[i])+1)
+        }else{
+            hashMap.set(nums[i], 1)
         }
-    }
-    return maxSum
-};
+      }
 
-console.log(maxProfit(prices = [7,1,5,3,6,4]))
+      for(let char of hashMap){
+        console.log(char)
+        if(char[1]>=3){
+            majorityElement.push(char[0])
+        }
+      }
+      console.log(majorityElement)
+return majorityElement
+    }
+
+    console.log(majorityElementTwo([1,2,1,1,3,2]))
