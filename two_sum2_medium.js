@@ -1,15 +1,15 @@
 /*two sum 2*/
 
-var twoSum = function(nums, target) {
+var twoSum = function(numbers, target) {
     let left =0;
-    let right = nums.length-1
+    let right = numbers.length-1
 
     while(left<right){
-        if(nums[left]+nums[right] > target){
+        if(numbers[left]+numbers[right] > target){
             right--
-        }else if(nums[left]+nums[right]<target){
+        }else if(numbers[left]+numbers[right]<target){
             left++
-        }else if(nums[left]+nums[right]==target){
+        }else if(numbers[left]+numbers[right]==target){
             return [left+1,right+1]
         }
     }
