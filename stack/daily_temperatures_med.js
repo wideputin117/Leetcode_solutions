@@ -1,5 +1,6 @@
 /** dailyt temperatures */
 
+/** we are using days index to keep track of if there are any future warmer days or not then we are performing our operations */
 var dailyTemperatures = function(temperatures) {
     let len = temperatures.length
     let stack =[]
@@ -12,7 +13,7 @@ var dailyTemperatures = function(temperatures) {
             stack.pop()
         }
         if(stack.length>0){
-            result[i]= stack[stack.length-1]-i
+            result[i]= stack[stack.length-1]-i  // if stack lenth is 0 and while loop didnot run 
         }
         stack.push(i)
         console.log(`stack after each iteration: ${stack}`)
