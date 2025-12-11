@@ -1,23 +1,24 @@
-/** dailyt temperatures */
+function haveSameCharsSameLength(str1, str2) {
+  // If lengths are different, they can't have the same characters.
+  if (str1.length !== str2.length) {
+    return false;
+  }
 
-var dailyTemperatures = function(temperatures) {
-    let len = temperatures.length
-    let stack =[]
-    let result = new Array(len).fill(0)
-    // console.log(result)
+  // Sort the characters of both strings. If they are anagrams,
+  // the sorted versions will be identical.
+  const sortedStr1 = str1.split('').sort().join('');
+  const sortedStr2 = str2.split('').sort().join('');
 
-    for(let i =len-1;i>=0;i--){
-        console.log(i)
-        while(stack.length>0 && temperatures[stack[stack.length-1]]<temperatures[i]){
-            stack.pop()
-        }
-        if(stack.length>0){
-            result[i]= stack[stack.length-1]-i
-        }
-        stack.push(i)
-        console.log(`stack after each iteration: ${stack}`)
-    }
-    return result
+  return sortedStr1 === sortedStr2;
+}
 
-};
-console.log(dailyTemperatures(temperatures = [73,74,75,71,69,72,76,73]))
+// Example Usage:
+const string1 = "listen";
+const string2 = "silent";
+const string3 = "hello";
+const string4 = "olleh";
+const string5 = "world";
+
+console.log(haveSameCharsSameLength(string1, string2)); // Output: true
+console.log(haveSameCharsSameLength(string3, string4)); // Output: true
+console.log(haveSameCharsSameLength(string1, string5)); // Output: false

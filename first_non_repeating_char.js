@@ -19,4 +19,4 @@ const check = (s)=>{
     }
     return false
 }
-console.log(check('aabbbdde'))
+console.log(check('aafbbbdde'))

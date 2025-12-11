@@ -4,15 +4,15 @@ function checkPalindrom(string) {
     let newString = string.length;
     console.log(newString);
     for(let i = 0; i < newString/2; i++) {
-        if(string[i] === string[newString-1]){
-            return true
+        if(string[i] !== string[newString-1-i]){
+            return false
             }
          
         }
         
-        return false;
+        return true;
 }
- let ans = checkPalindrom("MaMm");
+ let ans = checkPalindrom("MaM");
  
  if(ans){
     console.log(ans);
